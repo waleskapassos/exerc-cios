@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Formatanto String: Nas versões mais atuais do ecmascript a concatenação ('total' + s) foi substituido pela place order `Total $(s)`
+        // nome.length  - quantos caracteres a string tem
+        // nome.toUpperCase()  - Tudo para 'MAIÚSCULA'
+        // nome.toLowerCase()  - Tudo para 'minúscula'
+
+        var nome = window.prompt('Qual é seu nome?');
+        document.write(`Olá <strong>${nome}</strong> seu nome tem ${nome.length} letras<br/>`);
+        document.write(`Seu nome em letras maiúsculas, fica: ${nome.toUpperCase()}<br/>`);
+        document.write(`Seu nome em letras minúsculas, fica: ${nome.toLowerCase()}<br/>`);
+
+        // Formatando números:
+        // var n1 = 1545.5
+        // n1.toFixed(2) --- insere duas casas decimais: 1545.50
+        // n1.toFixed(2).replace('.',',') --- troca uma coisa por outra, no caso, ponto, por virgula: 1545.50
+        // n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} )
+
+        var n1 = Number(prompt('Digite um valor qualquer com centavos'));
+        document.write(`O valor digitado foi: ${n1}<br/>`);
+        document.write(`O valor digitado em Real, fica: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+
+    </script>
+</body>
+</html>

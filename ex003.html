@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+          background-color: blueviolet;
+          color: white;
+          font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <script>
+        var n1 = prompt('Olá, qual seu nome?');
+        alert('Seja bem vinda '+ n1 + '!');
+        var n2 = Number(prompt ('Digite um número!')); //Number irá converter os valores digitados como strings para numeros, identificando se são inteiros ou reais.
+        var n3 = Number(prompt ('Digite outro número!')); 
+        // Caso queira efetivamente um número inteiro, usar Number.parseInt(n) ou somente parseInt. E para converter para números reais utilizar Number.parseFloat(n) ou apenas parseFloat(n).
+        // Converter de número para string, utilizar String(n) ou n.toString()
+        var s = n2 + n3;
+        alert('A soma dos dois números é: ' + s );
+
+    </script>
+</body>
+</html>
